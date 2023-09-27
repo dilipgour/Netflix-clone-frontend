@@ -3,7 +3,7 @@ import useSWR from 'swr'
 
 
 const useBillboard= ()=>{
- const url='http://localhost:5000/api/random'
+ const url='https://netflix-clone-backend-dilip-gour-s-projects.vercel.app/api/random'
   
 const { data, error, isLoading } = useSWR(url, fetcher,
  { 

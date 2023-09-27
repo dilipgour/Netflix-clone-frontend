@@ -16,7 +16,7 @@ function Auth() {
   };
   const signup = async () => {
     const { data } = await axios.post(
-      "http://localhost:5000/api/signup",
+      "https://netflix-clone-backend-dilip-gour-s-projects.vercel.app/api/signup",
       {
         name,
         email,
@@ -38,7 +38,7 @@ function Auth() {
 
   const login = async () => {
     const { data } = await axios.post(
-      "http://localhost:5000/api/login",
+      "https://netflix-clone-backend-dilip-gour-s-projects.vercel.app/api/login",
       {
         email,
         password,

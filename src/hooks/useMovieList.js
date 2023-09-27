@@ -3,7 +3,7 @@ import {fetcher} from '../fetcher';
 
 
 const useBillboard= ()=>{
- const url='http://localhost:5000/api/getmovies'
+ const url='https://netflix-clone-backend-dilip-gour-s-projects.vercel.app/api/getmovies'
   
 const { data, error, isLoading } = useSWR(url, fetcher,
  { 

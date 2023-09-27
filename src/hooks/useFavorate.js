@@ -4,7 +4,7 @@ import useSWR from 'swr'
 
 const useFavorate= ()=>{
  const token= localStorage.getItem('token')
-  const url='http://localhost:5000/api/favorate'
+  const url='https://netflix-clone-backend-dilip-gour-s-projects.vercel.app/api/favorate'
   
 const {isLoading,data,mutate} =  useSWR([url, token], ([url, token]) => fetchWithToken(url, token))
   

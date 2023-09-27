@@ -19,7 +19,7 @@ function FavorateButton(props) {
     let response;
     if (isFavorate) {
       response = await axios.delete(
-        `http://localhost:5000/api/favorate/${movieId}`,
+        `https://netflix-clone-backend-dilip-gour-s-projects.vercel.app/api/favorate/${movieId}`,
         {
           headers: {
             "auth-token": localStorage.getItem("token"),
@@ -28,7 +28,7 @@ function FavorateButton(props) {
       );
     } else {
       response = await axios.post(
-        "http://localhost:5000/api/favorate",
+        "https://netflix-clone-backend-dilip-gour-s-projects.vercel.app/api/favorate",
         { movieId },
         {
           headers: {
